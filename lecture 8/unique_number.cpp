@@ -3,21 +3,23 @@
 using namespace std;
 
 void uniqueNumber(int arr[], int sz) {
-    int test=0;
+   
     for(int i=(sz-1); i>=0; i--){
+         int test=0;
         for(int j=0; j<(sz-1); j++ ) {
             if(i=!j){
                 if(arr[j]==arr[i]){
                     test++;
-                    break;
+                   
                 }
             }
             
         }
-                if (test==0) {
+                if (test < 1) {
                 cout << arr[i] << " ";
+                 test = 0;
                     } 
-                    test = 0;
+                   
     }
 
    
