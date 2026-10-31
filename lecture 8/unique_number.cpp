@@ -6,11 +6,11 @@ void uniqueNumber(int arr[], int sz) {
    
     for(int i=(sz-1); i>=0; i--){
          int test=0;
-        for(int j=0; j<(sz-1); j++ ) {
-            if(i=!j){
+        for(int j=0; j<sz; j++ ) {
+            if(i!=j){
                 if(arr[j]==arr[i]){
                     test++;
-                   
+                   break;
                 }
             }
             
