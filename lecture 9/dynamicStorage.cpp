@@ -8,8 +8,8 @@ int main() {
     vec.push_back(2);
     vec.push_back(3);
 
-    cout << vec.size() << endl;
-    cout << vec.capacity() << endl;
+    cout << vec.size() << endl; //3
+    cout << vec.capacity() << endl; //4
 
     return 0;
 }
